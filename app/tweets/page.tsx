@@ -48,14 +48,14 @@ const TweetIndex = () => {
   return (
     <>
       <Typography variant="h4" align="center">
-      Tweet List
+      {/* Tweet List */}
       </Typography>
       <TableContainer>
         <Table sx={{ maxWidth: 650 }} align="center">
           <TableHead>
             <TableRow>
-              <TableCell>Title</TableCell>
-              <TableCell>Body</TableCell>
+              <TableCell>name</TableCell>
+              <TableCell>tweet</TableCell>
               <TableCell colSpan={2}></TableCell>
             </TableRow>
           </TableHead>
@@ -68,8 +68,8 @@ const TweetIndex = () => {
                   <TableCell>
                     <Button
                       variant="contained"
-                      color="primary"
-                      size="small"
+                      // color="primary"
+                      // size="small"
                       startIcon={<VisibilityIcon />}
                       onClick={() => handleShowDetails(tweet.id)}
                     >
@@ -79,8 +79,8 @@ const TweetIndex = () => {
                   <TableCell>
                     <Button
                       variant="contained"
-                      color="error"
-                      size="small"
+                      // color="error"
+                      // size="small"
                       startIcon={<DeleteForeverIcon />}
                       onClick={() => deleteTweet(tweet.id)}
                     >
